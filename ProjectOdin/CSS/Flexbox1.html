@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First flexbox rehearsal</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        background: rgb(204, 255, 204);
+        height: 1000px;
+        width: 100%;
+        border: 5px solid green;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        background: rgb(106, 182, 218);
+        border: 5px solid blue;
+        width: 95%;
+        padding: 0.7%;
+        height: 20%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blockH{
+        margin: 0.5%;
+        width: 33%;
+        height: 95%;
+        background-color: orange;
+        border: 5px solid rgb(165, 101, 42);
+    }
+    #blockHMiddle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tBlock{
+        height: 90%;
+        width: 47%;
+        background-color: rgb(249, 104, 104);
+        border: 5px solid rgb(88, 3, 3);
+    }
+    .midSection{
+        display: flex;
+        margin: 0.5%;
+        height: 50%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .block{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #largebrick{
+        height: 100%;
+        background-color: rgb(249, 104, 104);
+        border: 5px solid rgb(88, 3, 3);
+    }
+    .brick{
+        height:48%;
+        width: 95%;
+        background-color: rgb(249, 104, 104);
+        border: 5px solid rgb(88, 3, 3);
+    }
+    footer{
+        display: flex;
+        background: rgb(106, 182, 218);
+        border: 5px solid blue;
+        width: 100%;
+        margin: 1%;
+        padding: 0.2%;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+    .blockF{
+        height: 95%;
+        width: 95%;
+        margin: 0.3%;
+        background-color: orange;
+        border: 5px solid rgb(165, 101, 42);
+    }
+</style>
+<body>
+    <div class="container">
+        <header>
+            <div class="blockH"></div>
+            <div class="blockH" id="blockHMiddle"> <div class="tBlock"></div>
+            <div class="tBlock"></div>
+            </div>
+            <div class="blockH"></div>
+        </header>
+        <div class="midSection">
+            <div class="block">
+                <div class="brick" id="largebrick"></div>
+            </div>
+            <div class="block">
+                <div class="brick"></div>
+                <div class="brick" style="margin-top: 1.2%;"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="blockF" style="background-color: rgb(217, 182, 252);border: 5px solid rgb(45, 3, 88);"></div>
+            <div class="blockF"></div>
+            <div class="blockF"></div>
+            <div class="blockF"  style="background-color: rgb(217, 182, 252);border: 5px solid rgb(45, 3, 88);"></div>
+        </footer>
+    </div>
+</body>
+</html>
